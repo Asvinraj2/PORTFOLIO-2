@@ -1,0 +1,340 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation for the whole page */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.home-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1200px;
+    height: 90%;
+    background: linear-gradient(240deg, hsla(306, 100%, 2%, 0.049), hsla(12, 86%, 43%, 0.038));
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 140px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInUp 1s forwards;
+    animation-delay: 0.3s; /* Start after small delay */
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-card:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.home-content {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-photo {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s forwards;
+    animation-delay: 1s; /* Delay to appear after text */
+}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greeting, .name, .role, .description {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s forwards;
+}
+
+.greeting {
+    animation-delay: 1.5s;
+}
+
+.name {
+    animation-delay: 2s;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role {
+    animation-delay: 1s;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.description {
+    animation-delay: 2.5s;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 3s; /* Delay to appear after description */
+}
+
+.social-icon {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: inline-block;
+    opacity: 0;
+    margin-bottom: 10px;
+    animation: fadeInIcon 0.5s forwards;
+}
+
+@keyframes fadeInIcon {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.social-icon:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.social-icon:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.social-icon:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.social-icon:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.social-icon:hover {
+    background: linear-gradient(45deg, #a37e7e95, #4c3e3e);
+    box-shadow: rgb(69, 61, 61) 5px 5px 10px;
+}
+
+.social-icon:hover i {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.social-icon i {
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 6s; 
+    margin-bottom: 5px;
+}
+
+.btn-box {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #a3bcd4;
+    color: #332c2c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeInIcon 0.5s forwards;
+}
+
+.btn-box:hover {
+    background-color: #255f99;
+    color: white;
+}
+
+.download-btn {
+    background-color: #f28888;
+}
+
+.download-btn:hover {
+    background-color: #d03939;
+}
+
+@keyframes fadeInIcon {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.btn-box:nth-child(1) {
+    animation-delay: 1.5s;
+}
+
+.btn-box:nth-child(2) {
+    animation-delay: 2s;
+}
+
+@media (max-width: 1024px) {
+    .home-card {
+        width: 90%;
+    }
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    .greeting, .role {
+        font-size: 1.3rem;
+    }
+    .name {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-card {
+        width: 100%;
+        padding: 15px;
+    }
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+    .greeting, .role {
+        font-size: 1.2rem;
+    }
+    .name {
+        font-size: 1.8rem;
+    }
+    .description {
+        font-size: 0.95rem;
+    }
+    .social-icon {
+        padding: 10px;
+    }
+    .btn-box {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+    }
+    .home-card {
+        width: 100%;
+       
+    }
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+    .greeting, .role {
+        font-size: 1rem;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 0.9rem;
+    }
+    .social-icon {
+        padding: 8px;
+    }
+    .btn-box {
+        padding: 6px 12px;
+    }
+}

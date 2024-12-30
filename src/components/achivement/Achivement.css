@@ -1,0 +1,59 @@
+/* Achivement.css */
+.content-section {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .content-section h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #1b1b27, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  
+  .content-section ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .content-section li {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .content-section li:last-child {
+    border-bottom: none;
+  }
+  
+  .content-section li h3 {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #2b2b31, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+  
+  .content-section li p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .content-section li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .content-section li a:hover {
+    text-decoration: underline;
+  }
+   #achievements {
+    background: hsla(56, 68%, 95%, 0.297);
+  } 

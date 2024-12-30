@@ -1,0 +1,108 @@
+/* Glassmorphism Navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    color: #ededed;
+    background: linear-gradient(to bottom, #f3f7f9, #cfdbf3);
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar a {
+    font-size: 20px;
+    color: #4f4f4f;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .navbar a:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    color: #4f4f4f;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      position: fixed;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to bottom, hsla(200, 33%, 96%, 0.716), #cfdbf3);
+      backdrop-filter: blur(100px);
+      padding: 20px 0;
+      transform: translateY(-200%);
+      transition: transform 0.5s ease;
+      border-radius: 0 0 30px 30px;
+    }
+  
+    .navbar.active {
+      transform: translateY(0);
+    }
+  
+    .navbar a {
+      margin: 15px 0;
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,32 @@
+.contact-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background: #e0e0e08a;
+  border-radius: 15px;
+  box-shadow: 8px 8px 16px #a5a5a5, -8px -8px 16px #ffffff;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #1b1b27, #4a90e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-container a {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #05182e;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  color: #434a4b;
+}
