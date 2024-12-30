@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 import 'boxicons/css/boxicons.min.css';
-import './Home.css';
+import './home.css';
 import karthi from './karthik.m.jpg';
 
 const Home1 = () => {
