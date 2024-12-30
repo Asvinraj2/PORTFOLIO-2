@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/navbar/Navbar'
-import Home from './components/home/home'
+import Home1 from './components/home/Home1'
 import Skills from './components/skills/Skills'
 import Aboutme from './components/aboutMe/Aboutme'
 import Project from './components/projects/Project'
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
     <Navbar />
-    <Home />
+    <Home1 />
     <Aboutme />
     <Skills />
     <Project />
