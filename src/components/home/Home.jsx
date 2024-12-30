@@ -8,7 +8,7 @@ const Home = () => {
 
     useEffect(() => {
         const typed = new Typed("#text", {
-          strings: ["AI Engineer", "Cloud Engineer", "AWS Expert"],
+          strings: ["AI Engineer", "Cloud Engineer", "AWS- Expert"],
           typeSpeed: 100,
           backSpeed: 100,
           backDelay: 1000,
